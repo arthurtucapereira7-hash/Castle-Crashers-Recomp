@@ -10,6 +10,7 @@ It also builds for the GameCube:
 
 > **In active development.** Castle Crashers Recomp is a work in progress: how it runs and plays
 > may change from one build to the next.
+
 > Found a bug? Please report it as a ticket on the
 > [Issues page](https://github.com/myuu-151/Castle-Crashers-Recomp/issues): what happened, what you
 > expected, and how to make it happen again if you can.
