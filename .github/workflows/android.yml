@@ -11,13 +11,12 @@ jobs:
       - name: Baixar o projeto
         uses: actions/checkout@v4
 
-      - name: Instalar ferramentas
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y cmake ninja-build clang \
-            libsdl3-dev libgl-dev
+      - name: Preparar SDL3
+        uses: libsdl-org/setup-sdl@main
+        with:
+          version: 3-latest
+          install-linux-dependencies: true
 
       - name: Verificar configuração CMake
-        run: |
-          cmake -S . -B build -G Ninja
-          
+        run: cmake -S . -B build -G Ninja
+        
